@@ -1,0 +1,128 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 275px;
+    font-weight: bold;
+    font-size: 90%;
+    margin-bottom: 15px;
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+    transition: 500ms;
+}
+
+button:hover {
+    transition: 500ms;
+    filter: brightness(80%);
+}
+
+#main {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 3.5%;
+    margin-bottom: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 15px;
+    padding-bottom: 15ppx;
+    border-radius: 4%;
+    border-style: solid;
+    border-color: #585858;
+    background-color: #ffffff;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    align-items: center;
+}
+
+#particles-main {
+    position: absolute; /* Relativo al .mi-menu */
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Detrás del contenido, pero DENTRO del menú */
+}
+
+#main-label {
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    display: flex;             /* 1. Activa el modo "Flexbox" */
+    flex-direction: column;    /* 2. Apila los hijos verticalmente (el "efecto <br>") */
+    align-items: center;       /* 3. Centra los hijos horizontalmente (y evita que se estiren) */
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+@media (max-width: 600px) {
+    body, html {
+        overflow: visible;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        min-width: 200px;
+        font-weight: bold;
+        font-size: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 500ms;
+    }
+
+    #main {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 5%;
+    }
+
+    #main-label {
+        position: relative;
+        z-index: 2;
+        align-items: center;
+    }
+}
